@@ -1,5 +1,7 @@
 KEEP IN MIND I AM NEW TO LINUX, DWM, AND GITHUB!!!
 
+minimal DWM config
+
 Patches Applied:
 Cool AutoStart
 Packages Needed:
@@ -12,7 +14,7 @@ dwm is an extremely fast, small, and dynamic window manager for X.
 
 Requirements
 ------------
-In order to build dwm you need the Xlib header files.
+In order to build dwm you need the libx11, libxft, libxinerama, xorg-server, and xorg-xinit
 
 
 Installation
