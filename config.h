@@ -58,7 +58,7 @@ static const Layout layouts[] = {
 	{ MODKEY|ControlMask|ShiftMask, KEY,      toggletag,      {.ui = 1 << TAG} },
 
 /* helper for spawning shell commands in the pre dwm-5.0 fashion */
-#define SHCMD(cmd) { .v = (const char*[]){ "kitty", "-c", cmd, NULL } }
+#define SHCMD(cmd) { .v = (const char*[]){ "/usr/bin/sh", "-c", cmd, NULL } }
 
 /* commands */
 static const char *termcmd[]  = { "kitty", NULL };
@@ -67,6 +67,8 @@ static const char *roficmd[]  = { "rofi", "-show", "drun", "-show-icons", NULL }
 static const Key keys[] = {
 	/* modifier                     key        function        argument */
 	{ MODKEY,                       XK_z,      spawn,          {.v = roficmd } },
+        { ShiftMask,                    XK_Print,  spawn,     SHCMD("~/dwm/screenshot.sh") },
+        { MODKEY,                       XK_Print,  spawn,     SHCMD("~/dwm/screenshotselect.sh") },
 	{ MODKEY|ShiftMask,             XK_Return, spawn,          {.v = termcmd } },
 	{ MODKEY,                       XK_b,      togglebar,      {0} },
 	{ MODKEY,                       XK_j,      focusstack,     {.i = +1 } },
