@@ -14,7 +14,7 @@ dwm is an extremely fast, small, and dynamic window manager for X.
 
 Requirements
 ------------
-In order to build dwm you need the libx11, libxft, libxinerama, xorg-server, and xorg-xinit
+In order to build dwm you need the libx11, libxft, and libxinerama packages. In order to run DWM you need xorg-server and xorg-xinit packages. (These are the steps for Arch based distros.)
 
 
 Installation
