@@ -1,11 +1,10 @@
 KEEP IN MIND I AM NEW TO LINUX, DWM, AND GITHUB!!!
-Scrot looks in ~/dwm for the screenshot files.
 Minimal DWM config
 
-Patch Applied:
-Cool AutoStart
+Patches Applied:
+Cool AutoStart, actualfullscreen, and systray
 Packages Needed:
-Picom, Rofi, Kitty, Scrot
+Picom, Rofi, Kitty, Slock, and Flameshot
 
 
 dwm - dynamic window manager
